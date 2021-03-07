@@ -1,0 +1,797 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+.iphone_6_7_8 {
+    display: none;
+}
+
+#navbar {
+    padding-top: 0.5%;
+}
+
+#nav-logo {
+    max-width: 40px;;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 6px;
+}
+
+#navbar i {
+    color: white;
+}
+
+#navbar a {
+    color: white;
+}
+
+#navbar .container {
+    max-width: 100vw;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.nav-pills .nav-link.active{
+    background-color: rgba(46, 134, 222,1.0)!important;
+    border-radius: 0.5rem;
+}
+/* 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#navbar a:nth-child(1):hover {
+    -webkit-animation: fadein 3s;
+       -moz-animation: fadein 3s; 
+        -ms-animation: fadein 3s; 
+         -o-animation: fadein 3s; 
+            animation: fadein 3s;
+
+}
+
+#navbar a:nth-child(2):hover {
+    -webkit-animation: fadein 3s; 
+       -moz-animation: fadein 3s; 
+        -ms-animation: fadein 3s; 
+         -o-animation: fadein 3s; 
+            animation: fadein 3s;
+}
+
+#navbar a:nth-child(3):hover {
+    -webkit-animation: fadein 3s; 
+       -moz-animation: fadein 3s; 
+        -ms-animation: fadein 3s;
+         -o-animation: fadein 3s; 
+            animation: fadein 3s;
+
+}
+
+#navbar a:nth-child(4):hover {
+    -webkit-animation: fadein 3s; 
+       -moz-animation: fadein 3s; 
+        -ms-animation: fadein 3s; 
+         -o-animation: fadein 3s; 
+            animation: fadein 3s;
+
+} */
+
+.Home {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, rgba(46, 134, 222,1.0), rgba(255, 255, 255,0.6)), url(../images/backgrounds/AboutUs3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*#background-wrap {
+    filter: brightness(20%);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top:0; right: 0; bottom:0; left:0;
+}
+*/
+
+/*#background-wrap video {
+    min-height: 100%;
+    min-width: 100%;
+}*/
+
+.HomeText {
+    text-align: left;
+    padding-top: 200px;
+    padding-left: 30px;
+    color: white;
+    width: 70vw;
+}
+
+.HomeText .Slogan {
+    padding-bottom: 70px;
+}
+
+.Home .tagline h3{
+    font-weight: 100;
+    font-size: 1.3rem;
+    width: 50vw;
+    letter-spacing: 1px;
+}
+
+
+.middle {
+    position: absolute;
+    top: 95vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+
+#scroll_mouse {
+    animation-delay: 3s;
+    animation-duration: 2s;
+}
+
+.mouse {
+    /* width: 1.7rem;
+    height: 3rem;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 60px; */
+    opacity: 0;
+    animation-name: mouseFadeIn;
+    animation-duration: 2.5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+.mouse::before {
+    /* content: ""; */
+    /* width: 1rem;
+    height: 1rem; */
+    position: absolute;
+    font-size: 3.8vh;
+    /* top: 0.7rem;
+    background: rgba(255, 255, 255, 1);
+    /* left: 50%; */
+    transform: translateX(-50%);
+    /* border-radius: 50%; */
+    opacity: 0.8;
+    animation: mouse 2.2s infinite;
+}
+
+.mouse i {
+    width: 2vh;
+    height: 2vh;
+}
+
+@keyframes mouse {
+    from {
+        opacity: 0.8;
+        top: 0.5rem;
+    }
+    to {
+        opacity: 0;
+        top: 1.3rem;
+    }
+}
+
+@keyframes mouseFadeIn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.AboutUs {
+    background: white;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.AboutUsParagraph {
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.AboutUs #ClientsTitle {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: rgba(46, 134, 222,1.0);
+}
+
+.AboutUs #CertiTitle {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    color: rgba(46, 134, 222,1.0);
+}
+
+.AboutUs img {
+    width: auto;
+    height: 12vh;
+}
+
+.AboutUs .row {
+    display: flex;
+    text-align: center;
+}
+
+.AboutUs .column {
+    flex:20%;
+    text-align: center;
+}
+
+#Services {
+    background-image: linear-gradient(to bottom right, rgba(46, 134, 222,1.0) 35%, rgba(255, 255, 255,0.85));
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+#ServicesTitle {
+    text-align: center;
+    color: white;
+    padding-bottom: 60px;
+}
+
+#accordion {
+    padding-top: 1vh;
+    width: auto;
+    border-radius: 1vh;
+}
+
+#accordion .card {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+}
+
+#accordion button {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#accordion .card-header {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+#accordion .card-body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1rem;
+    color: black;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.card-header {
+    padding: 1.5vh;
+}
+
+.card-header i {
+    transform: translate(0%, 20%);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+/* ul { padding-left:20px; list-style:none; }
+li { margin-bottom:10px; }
+
+ul li:before {
+    font-family: 'FontAwesome';
+    content: '\f054';
+    margin:0 5px 0 -15px;
+} */
+
+.Solutions {
+    background: white;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+#SolutionsTitle {
+    text-align: center;
+    padding-bottom: 70px;
+    color: rgba(46, 134, 222,1.0);
+}
+
+.swiper-container {
+    display: flex;
+}
+
+.s_card {
+    position: relative;
+    background: #fff;
+    width: 40vh;
+    height: 60vh;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 0.5px solid rgba(46, 134, 222,1.0);
+}
+
+.s_card .content {
+    width: 40vh;
+    padding: 3vh;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.s_card .content a {
+    display: inline-block;
+    margin: 1vh 0 0;
+    padding: 1vh 2vh;
+    text-decoration: none;
+    border: 1px solid #262626;
+    color: #262626;
+    font-weight: 600;
+}
+
+.s_card .sliderText {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #000;
+    border-radius: 1vh 1vh 0vh 0vh;
+}
+.s_card .sliderText h3 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.swiper-slide {
+    width: 40vh;
+}
+
+.swiper-slide:nth-child(1) .sliderText{
+    background: linear-gradient(to bottom right, rgba(46, 134, 222,1.0) 35%, rgba(255, 255, 255,0.85));
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+
+.swiper-slide:nth-child(2) .sliderText{
+    background: linear-gradient(to bottom right, rgba(46, 134, 222,1.0) 35%, rgba(255, 255, 255,0.85));
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+
+.swiper-slide:nth-child(3) .sliderText{
+    background: linear-gradient(to bottom right, rgba(46, 134, 222,1.0) 35%, rgba(255, 255, 255,0.85));
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+
+.swiper-slide:nth-child(4) .sliderText{
+    background: linear-gradient(to bottom right, rgba(46, 134, 222,1.0) 35%, rgba(255, 255, 255,0.85));
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+}
+
+
+
+/* body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  } */
+
+
+/* Swiper.js */
+/* 
+.swiper-container {
+    max-width: 100vw;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    color: white;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 60vh!important;
+    height: 60vh;
+}
+
+.swiper-wrapper {
+    width: 100vh;
+}
+
+.swiper-slide .imgBx {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    max-width: 60vh;
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+.swiper-slide .details {
+    box-sizing: border-box;
+    font-size: 1vh;
+    padding-top: 4vh;
+    text-align: center;
+} */
+
+/* Carousel */
+
+/* .carousel-item {
+    width: 100vw;
+    height: 100vh;
+} */
+
+/* .carousel-item:after {
+    content:"";
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.4);
+} */
+
+/* .fill {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100vh;
+    max-height: 100vh;
+    margin: auto;
+    filter: brightness(50%);
+}
+
+.SolutionText {
+    color: black;
+} */
+
+.ContactUs {
+    background-image: linear-gradient(to bottom right, rgba(87, 101, 116,1.0), rgba(200, 214, 229,1.0));
+    padding-top: 100px;
+}
+
+#ContactUsTitle {
+    text-align: center;
+    color: white;
+    padding-bottom: 60px;
+}
+
+#contact-info {
+    text-align: center;
+}
+
+#contact-details {
+    margin: 0;
+    padding-bottom: 50px;
+}
+#contact-details a {
+    text-decoration: none;
+    color: white;
+}
+
+#contact-info .lead {
+    font-size: 1.5rem;
+}
+
+#contact-info i {
+    color: rgba(200, 214, 229,1.0);
+}
+
+#contact-info a:hover {
+    color: rgba(87, 101, 116,1.0);
+}
+
+#contact-info i:hover {
+    color: rgba(87, 101, 116,1.0);
+}
+
+/*.contact-form{
+  display: flex;
+  max-width: 90vw;
+  margin: 0 auto;
+  font-size: 1.7vh;
+}
+
+.contact_form {
+    display: flex;
+    margin: 0 auto;
+    padding: 2vh;
+    border-radius: 1vh;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0 0 4vh rgba(0,0,0,0.5);
+}
+ 
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+ 
+.input-fields,
+.msg{
+  width: 48%;
+}
+ 
+.input-fields .input,
+.msg textarea{
+  margin: 1vh 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid #c5ecfd;
+  padding: 1.2vh;
+  color: #c5ecfd;
+  width: 100%;
+}
+ 
+.msg textarea{
+  height: 26vh;
+}
+
+ 
+.Sendbtn {
+    background: rgba(2, 141, 160, 0.45);
+    width: 100%;
+    height: 4.5vh;
+    text-align: center;
+    padding: 0.5vh;
+    border: none;
+    border-radius: 0.5vh;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}*/
+
+button:hover {
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    padding-bottom: 5px;
+}
+
+.not_iphone_x {
+    display: inline-block;
+}
+
+.iphone_x {
+    display: none;
+}
+
+@media only screen and (max-width: 667px) {
+    #navbar {
+        padding-top: 3%;
+        width: 99vw;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    #nav-logo {
+        max-width: 30px;
+    }
+    .HomeText {
+        text-align: left;
+        padding-top: 150px;
+        padding-left: 30px;
+        color: white;
+        width: 99vw;
+    }
+    .HomeText .Slogan {
+        padding-bottom: 40px;
+        font-size: 2.6rem;
+    }
+
+    .Home .tagline h3{
+        font-weight: 100;
+        font-size: 1rem;
+        width: 65vw;
+        letter-spacing: 1.2px;
+    }
+    .AboutUs {
+        background: white;
+        padding-bottom: 120px;
+        padding-top: 100px;
+    }
+
+
+    .AboutUsParagraph {
+        display: none;
+    }
+
+    .AboutUs .iphone_6_7_8 {
+        display: inline-block;
+        text-align: center;
+        font-size: 1.2rem;
+        color: black;
+    }
+ 
+
+    .AboutUs #ClientsTitle {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        color: rgba(46, 134, 222,1.0);
+        font-size: 2.6rem;
+    }
+
+    .AboutUs #CertiTitle {
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 20px;
+        color: rgba(46, 134, 222,1.0);
+        font-size: 2.6rem;
+    }
+
+    .AboutUs img {
+        width: auto;
+        height: 50px;
+    }
+
+    #Services {
+        background-image: linear-gradient(to bottom right, rgba(46, 134, 222,1.0) 55%, rgba(255, 255, 255,0.85));
+        padding-bottom: 80px;
+        padding-top: 120px;
+    }
+
+    #ServicesTitle {
+        text-align: center;
+        color: white;
+        padding-bottom: 40px;
+        font-size: 2.6rem;
+    }
+
+    #accordion {
+        padding-top: 1vh;
+    }
+
+    #accordion .eisa {
+        display: none;
+    }
+
+    #accordion .iphone_6_7_8 {
+        display: inline-block;
+    }
+
+    #accordion button {
+        color: white;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+    #accordion .card-body {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 0.8rem;
+        color: black;
+        border-radius: 8px;
+        background-color: white;
+    }
+
+    .card-header {
+        padding: 1.5vh;
+    }
+
+    .card-header i {
+        transform: translate(0%, 20%);
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+    }
+    .Solutions {
+        background: white;
+        padding-bottom: 100px;
+        padding-top: 80px;
+    }
+    #SolutionsTitle {
+        text-align: center;
+        padding-bottom: 70px;
+        font-size: 2.6rem;
+        color: rgba(46, 134, 222,1.0);
+    }
+
+    .swiper-container {
+        display: flex;
+    }
+    .s_card {
+        position: relative;
+        background: #fff;
+        width: 40vh;
+        height: 60vh;
+        margin: 0 auto;
+        border-radius: 15px;
+        border: 0.5px solid rgba(46, 134, 222,1.0);
+    }
+    .s_card .content {
+        width: 40vh;
+        padding: 3vh;
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
+    .s_card .content a {
+        display: inline-block;
+        margin: 1vh 0 0;
+        padding: 1vh 2vh;
+        text-decoration: none;
+        border: 1px solid #262626;
+        color: #262626;
+        font-weight: 600;
+    }
+
+    .s_card .sliderText {
+        position: relative;
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #000;
+        border-radius: 1vh 1vh 0vh 0vh;
+    }
+    .s_card .sliderText h3 {
+        color: #fff;
+        font-size: 1.8rem;
+    }
+    .s_card .content {
+        font-size: 0.8rem;
+    }
+    .ContactUs {
+        background-image: linear-gradient(to bottom right, rgba(87, 101, 116,1.0), rgba(200, 214, 229,1.0));
+        padding-top: 80px;
+    }
+    #ContactUsTitle {
+        text-align: center;
+        color: white;
+        padding-bottom: 50px;
+        font-size: 2.6rem;
+    }
+    #contact-info {
+        text-align: center;
+    }
+    #contact-details {
+        padding-bottom: 20px;
+    }
+    #contact-details .lead{
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    #contact-details a {
+        color: white;
+    }
+
+    #contact-info i {
+        color: rgba(200, 214, 229,1.0);
+    }
+
+}
